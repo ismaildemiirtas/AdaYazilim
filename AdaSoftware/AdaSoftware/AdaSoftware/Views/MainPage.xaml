@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" 
+             xmlns:vm="clr-namespace:AdaSoftware.ViewModels"
+             x:Class="AdaSoftware.Views.MainPage">
+
+
+
+    <ContentPage.BindingContext>
+        <vm:MainPageViewModel></vm:MainPageViewModel>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="MidnightBlue">
+            <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                <Image Source="https://pbs.twimg.com/profile_images/1362748821747494919/MSanMxSe_400x400.jpg" HeightRequest="200" WidthRequest="200"/>
+                <Entry Placeholder="Username"  Text="{Binding Username}" WidthRequest="250" VerticalOptions="Center" HorizontalOptions="Center" TextColor="AliceBlue" PlaceholderColor="CornflowerBlue"></Entry>
+                <Entry Placeholder="Password" Text="{Binding Password}" IsPassword="True" WidthRequest="250" VerticalOptions="Center" HorizontalOptions="Center" TextColor="AliceBlue" PlaceholderColor="CornflowerBlue"></Entry>
+
+                <Button Text="LogIn" BackgroundColor="CornflowerBlue" Command="{Binding LoginCommand}"></Button>
+                <Button Text="SıngUp" BackgroundColor="Orange" Command="{Binding SignUpCommand}"></Button>
+                <Label TextColor="LightSkyBlue" Text="{Binding LoginStatus}" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Center"></Label>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

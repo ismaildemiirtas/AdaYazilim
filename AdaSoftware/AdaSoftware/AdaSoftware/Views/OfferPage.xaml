@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AdaSoftware.Views.OfferPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Clicked="ToolbarItem_Clicked" Text="Get Offer" Order="Primary" Priority="0" Command="{Binding AddInsuranceCommand}"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="MidnightBlue" >
+            <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+
+                <Entry Text="Axa Sigorta-Kasko" HorizontalOptions="FillAndExpand" TextColor="AliceBlue"></Entry>
+                <Entry Text="Axa Sigorta- Sağlık" HorizontalOptions="FillAndExpand" TextColor="AliceBlue" ></Entry>
+                <Entry Text="Anadolu Hayat- Kasko" HorizontalOptions="FillAndExpand" TextColor="AliceBlue"></Entry>
+                <Entry Text="Anadolu Hayat- Sağlık" HorizontalOptions="FillAndExpand" TextColor="AliceBlue"></Entry>
+                <Entry Text="Allianz- Kasko" HorizontalOptions="FillAndExpand" TextColor="AliceBlue" ></Entry>
+                <Entry Text="Allianz- Sağlık" HorizontalOptions="FillAndExpand" TextColor="AliceBlue" ></Entry>
+            </StackLayout>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

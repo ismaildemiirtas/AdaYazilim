@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# IDE0023: İşleçler için blok gövdesi kullan
+csharp_style_expression_bodied_operators = false
